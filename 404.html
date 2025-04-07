@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0;url=/disciple-voice/">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <title>404 - 頁面未找到</title>
+    <script>
+        // 將當前路徑存到 sessionStorage，然後重定向到根路徑
+        sessionStorage.setItem('redirect', window.location.pathname);
+        window.location = '/disciple-voice/';
+    </script>
 </head>
 
 <body>
-    <script>
-        window.location.href = '/disciple-voice/' + window.location.pathname.replace('/disciple-voice', '');
-    </script>
+    <div class="container">
+        <h1>載入中...</h1>
+        <p>正在重定向，請稍候。</p>
+    </div>
 </body>
 
 </html>
